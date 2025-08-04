@@ -4,9 +4,9 @@ from typing import List
 # 引入∞防止数组越界
 def get_val(arr, idx):
     if idx < 0:
-        return float('-inf')
+        return float("-inf")
     if idx >= len(arr):
-        return float('inf')
+        return float("inf")
     return arr[idx]
 
 
@@ -51,7 +51,7 @@ class Solution:
         return num_mid
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     nums1 = eval(str(input()))
     nums2 = eval(str(input()))
@@ -59,5 +59,5 @@ if __name__ == '__main__':
     # 测试集
     # nums1 = []
     # nums2 = [2, 3, 4, 5, 5]
-
-    print(s.findMedianSortedArrays(nums1, nums2))
+    result = s.findMedianSortedArrays(nums1, nums2)
+    print(result)

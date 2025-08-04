@@ -1,15 +1,14 @@
 class solution:
     def myAtoi(self, s: str) -> int:
-        INT_MIN = -2 ** 31
-        INT_MAX = 2 ** 31 - 1
+        INT_MIN = -(2**31)
+        INT_MAX = 2**31 - 1
 
         s = s.strip()
         flag = 1
-        result = ''
 
         if not s:
             return 0
-
+        # result = ''
         # if s[0] == '-':
         #     flag = -1
         #     s = s[1:]
@@ -29,11 +28,11 @@ class solution:
         # return result
 
         i = 0
-
-        if s[0] == '-':
+        result = 0
+        if s[0] == "-":
             flag = -1
             i += 1
-        if s[0] == '+':
+        if s[0] == "+":
             flag = 1
             i += 1
         while i < len(s) and s[i].isdigit():
@@ -45,7 +44,7 @@ class solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = solution()
     mystring = str(input())
 

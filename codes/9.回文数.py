@@ -35,10 +35,10 @@ class Solution:
         return x == reverted or x == reverted // 10
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Solution()
     x = int(input())
 
     # x = 121
-    res = s.isPalindrome(x)
-    print(res)
+    result = s.isPalindrome(x)
+    print(result)

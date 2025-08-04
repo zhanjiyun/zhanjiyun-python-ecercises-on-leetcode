@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
 
@@ -16,9 +17,10 @@ class Solution:
             if nums_needed in hashmap:
                 return [hashmap[nums_needed], i]
             hashmap[nums[i]] = i
-        return [] #找不到两数之和为target
+        return []  # 找不到两数之和为target
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     s = Solution()
     nums_str = input()
     target = int(input())
